@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>List Of Verbs</title>
+	<style type="text/css">
+	html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+  background: #293f50;
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container,
+.grid {
+  margin: 0 auto;
+  width: 960px;
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.grid,
+.col-1-3,
+.col-2-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-1-3,
+.col-2-3  {
+  display: inline-block;
+  vertical-align: top;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+
+.row,
+.row-alt {
+  min-width: 960px;
+}
+.row {
+  background: #fff;
+  padding: 66px 0 44px 0;
+}
+.row-alt {
+  background: #cbe2c1;
+  background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background:    -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background:         linear-gradient(to right, #a1d3b0, #f6f1d3);
+  padding: 44px 0 22px 0;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h2, h3, h4 {
+  color: #648880;
+}
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+strong {
+  font-weight: 400;
+}
+cite,
+em {
+  font-style: italic;
+}
+
+/*
+  ========================================
+  Leads
+  ========================================
+*/
+
+.lead {
+  text-align: center;
+}
+.lead p {
+  font-size: 21px;
+  line-height: 33px;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+  color: #648880;
+  text-decoration: none;
+}
+a:hover {
+  color: #a9b2b9;
+}
+p a {
+  border-bottom: 1px solid #dfe2e5;
+}
+.primary-header a,
+.primary-footer a {
+  color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn {
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.btn-default {
+  border: 0;
+  background: #648880;
+  padding: 11px 30px;
+  font-size: 14px;
+}
+.btn-default:hover {
+  background: #77a198;
+}
+.btn-alt {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+}
+.btn-alt:hover {
+  background: #fff;
+  color: #648880;
+}
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+.logo {
+  border-top: 4px solid #648880;
+  float: left;
+  font-size: 48px;
+  font-weight: 100;
+  letter-spacing: .5px;
+  line-height: 44px;
+  padding: 40px 0 22px 0;
+  text-transform: uppercase;
+}
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: right;
+}
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+.primary-footer {
+  color: #648880;
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+.primary-footer small {
+  float: left;
+  font-weight: 400;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+  text-align: right;
+}
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+
+/*
+  ========================================
+  Home
+  ========================================
+*/
+
+.hero {
+  color: #fff;
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 36px;
+}
+.hero p {
+  font-size: 24px;
+  font-weight: 100;
+}
+.teaser a:hover h3 {
+  color: #a9b2b9;
+}
+.teaser img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%
+}
+
+/*
+  ========================================
+  Speakers
+  ========================================
+*/
+
+.speaker {
+  margin-bottom: 44px;
+}
+.speaker-info {
+  border: 1px solid #dfe2e5;
+  border-radius: 5px;
+  margin-top: 88px;
+  padding-bottom: 22px;
+  text-align: center;
+}
+.speaker-info img {
+  border-radius: 50%;
+  height: 130px;
+  margin: -66px 0 22px 0;
+  vertical-align: top;
+}
+
+/*
+  ========================================
+  Venue
+  ========================================
+*/
+
+.venue-theatre {
+  margin-bottom: 66px;
+}
+.venue-hotel {
+  margin-bottom: 22px;
+}
+.venue-map {
+  height: 264px;
+}
+
+/*
+  ========================================
+  Register
+  ========================================
+*/
+
+.why-attend {
+  list-style: square;
+  margin: 0 0 22px 30px;
+}
+form {
+  margin-bottom: 22px;
+}
+input,
+select,
+textarea {
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.register-group label {
+  color: #648880;
+  cursor: pointer;
+  font-weight: 400;
+}
+.register-group input,
+.register-group select,
+.register-group textarea {
+  border: 1px solid #c6c9cc;
+  border-radius: 5px;
+  color: #888;
+  display: block;
+  margin: 5px 0 27px 0;
+  padding: 5px 8px;
+}
+.register-group input,
+.register-group textarea {
+  width: 100%;
+}
+.register-group select {
+  height: 34px;
+  width: 60px;
+}
+.register-group textarea {
+  height: 78px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+	table {
+  border-collapse: separate;
+  border-spacing: 0;
+  color: #4a4a4d;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+th,
+td {
+  padding: 10px 15px;
+  vertical-align: middle;
+}
+thead {
+  background: #395870;
+  background: linear-gradient(#49708f, #293f50);
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+th:first-child {
+  border-top-left-radius: 5px;
+  text-align: left;
+}
+th:last-child {
+  border-top-right-radius: 5px;
+}
+tbody tr:nth-child(even) {
+  background: #f0f0f2;
+}
+td {
+  border-bottom: 1px solid #cecfd5;
+  border-right: 1px solid #cecfd5;
+}
+td:first-child {
+  border-left: 1px solid #cecfd5;
+}
+.book-title {
+  color: #395870;
+  display: block;
+}
+.text-offset {
+  color: #7c7c80;
+  font-size: 12px;
+}
+.item-stock,
+.item-qty {
+  text-align: center;
+}
+.item-price {
+  text-align: right;
+}
+.item-multiple {
+  display: block;
+}
+tfoot {
+  text-align: right;
+}
+tfoot tr:last-child {
+  background: #f0f0f2;
+  color: #395870;
+  font-weight: bold;
+}
+tfoot tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+tfoot tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+}
+</style>
+
+  </head>
+
+  <body>
+
+    <!-- Header -->
+
+
+   <!--  <section class="row-alt">
+      <div class="lead container">
+	  <table> -->
+	  <section class="row-alt">
+      <div class="lead container">
+	  <table>
+  <thead>
+    <tr>
+      <th scope="col" colspan="1">Model</th>
+	  <th scope="col" colspan="1">Infinitif</th>
+	  <th scope="col" colspan="1">Meaning</th>
+	  <th scope="col" colspan="1">Participe Présent</th>
+	  <th scope="col" colspan="1">Participe Passé</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">profiter (de)</td>
+<td class="item-qty">to make the most of</td>
+<td class="item-qty">profitant</td>
+<td class="item-qty">profite</td> 
+    </tr>
+	       <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">proposer</td>
+<td class="item-qty">to propose</td>
+<td class="item-qty">proposant</td>
+<td class="item-qty">proposé</td> 
+    </tr>
+	    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">protester</td>
+<td class="item-qty">to protest</td>
+<td class="item-qty">protestant</td>
+<td class="item-qty">protesté</td> 
+    </tr>
+	    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">provoquer</td>
+<td class="item-qty">to provoke</td>
+<td class="item-qty">provoquant</td>
+<td class="item-qty">provoqué</td> 
+    </tr>
+	    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">quitter</td>
+<td class="item-qty">to quit</td>
+<td class="item-qty">quittant</td>
+<td class="item-qty">quitté</td> 
+    </tr>
+   		      <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">raccrocher</td>
+<td class="item-qty">to hang up</td>
+<td class="item-qty">raccrochant</td>
+<td class="item-qty">raccroché</td> 
+    </tr>
+	       <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">raconter</td>
+<td class="item-qty">to narrate</td>
+<td class="item-qty">racontant</td>
+<td class="item-qty">raconté</td> 
+    </tr>
+	    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">rapporter</td>
+<td class="item-qty">to bring back</td>
+<td class="item-qty">rapportant</td>
+<td class="item-qty">rapporté</td> 
+    </tr>
+	    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">se raser</td>
+<td class="item-qty">to have a shave</td>
+<td class="item-qty">rasant</td>
+<td class="item-qty">rasé</td> 
+    </tr>
+	    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">rater</td>
+<td class="item-qty">to miss, to fail</td>
+<td class="item-qty">ratant</td>
+<td class="item-qty">raté</td> 
+    </tr>
+    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">réaliser</td>
+<td class="item-qty">to relaize</td>
+<td class="item-qty">réalissant</td>
+<td class="item-qty">réalisé</td> 
+    </tr>
+	       <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">récompenser</td>
+<td class="item-qty">to reward</td>
+<td class="item-qty">récompensant</td>
+<td class="item-qty">récompensé</td> 
+    </tr>
+	    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">refuser</td>
+<td class="item-qty">to refuse</td>
+<td class="item-qty">refusant</td>
+<td class="item-qty">refusé</td> 
+    </tr>
+	    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">regarder</td>
+<td class="item-qty">to watch, to look at</td>
+<td class="item-qty">regardant</td>
+<td class="item-qty">regardé</td> 
+    </tr>
+	    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">se regarder</td>
+<td class="item-qty">to look at o.s.</td>
+<td class="item-qty">regardant</td>
+<td class="item-qty">regardé</td> 
+    </tr>
+    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">regretter</td>
+<td class="item-qty">to regret</td>
+<td class="item-qty">regrettant</td>
+<td class="item-qty">regretté</td> 
+    </tr>
+	       <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">remarquer</td>
+<td class="item-qty">to notice</td>
+<td class="item-qty">remarquant</td>
+<td class="item-qty">remarqué</td> 
+    </tr>
+	    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">remonter</td>
+<td class="item-qty">to date basck</td>
+<td class="item-qty">remontant</td>
+<td class="item-qty">remonté</td> 
+    </tr>
+	    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">rencontrer</td>
+<td class="item-qty">to meet</td>
+<td class="item-qty">rencontrant</td>
+<td class="item-qty">rencontré</td> 
+    </tr>
+	    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">se rencontrer</td>
+<td class="item-qty">to meet each other</td>
+<td class="item-qty">rencontrant</td>
+<td class="item-qty">rencontré</td> 
+    </tr>
+    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">rentrer</td>
+<td class="item-qty">to come back</td>
+<td class="item-qty">rentrant</td>
+<td class="item-qty">rentré</td> 
+    </tr>
+	       <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">réparer</td>
+<td class="item-qty">to repair</td>
+<td class="item-qty">réparant</td>
+<td class="item-qty">réparé</td> 
+    </tr>
+	    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">se reposer</td>
+<td class="item-qty">to take rest</td>
+<td class="item-qty">reposant</td>
+<td class="item-qty">reposé</td> 
+    </tr>
+	    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">réserver</td>
+<td class="item-qty">to reserve</td>
+<td class="item-qty">réservant</td>
+<td class="item-qty">réservé</td> 
+    </tr>
+	    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">ressembler</td>
+<td class="item-qty">to resemble</td>
+<td class="item-qty">ressemblant</td>
+<td class="item-qty">ressemblé</td> 
+    </tr>
+    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">rester</td>
+<td class="item-qty">to stay</td>
+<td class="item-qty">restant</td>
+<td class="item-qty">resté</td> 
+    </tr>
+	       <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">retirer</td>
+<td class="item-qty">to withdraw</td>
+<td class="item-qty">retirant</td>
+<td class="item-qty">retiré</td> 
+    </tr>
+	    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">retourner</td>
+<td class="item-qty">to return</td>
+<td class="item-qty">retournant</td>
+<td class="item-qty">retouné</td> 
+    </tr>
+	    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">retoruver</td>
+<td class="item-qty">to find again</td>
+<td class="item-qty">retrouvant</td>
+<td class="item-qty">retrouvé</td> 
+    </tr>
+	    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">se retrouver</td>
+<td class="item-qty">to meet</td>
+<td class="item-qty">retrouvant</td>
+<td class="item-qty">retrouvé</td> 
+    </tr>	
+	
+		    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">réutiliser</td>
+<td class="item-qty">to reuse</td>
+<td class="item-qty">réutilisant</td>
+<td class="item-qty">réutilisé</td> 
+    </tr>
+			    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">se réveiller</td>
+<td class="item-qty">to wake up</td>
+<td class="item-qty">réveillant</td>
+<td class="item-qty">réveillé</td> 
+    </tr>
+			    <tr>  
+      <td class="item-stock">3</td>
+<td class="item-qty">rêver</td>
+<td class="item-qty">to dream</td>
+<td class="item-qty">rêvant</td>
+<td class="item-qty">rêvé</td> 
+    </tr>
+				    <tr>  
+      <td class="item-stock">4</td>
+<td class="item-qty">remplacer</td>
+<td class="item-qty">to replace</td>
+<td class="item-qty">remplaçant</td>
+<td class="item-qty">remplacé</td> 
+    </tr>
+				    <tr>  
+      <td class="item-stock">6</td>
+<td class="item-qty">promener</td>
+<td class="item-qty">to take s.o. for a walk</td>
+<td class="item-qty">promenant</td>
+<td class="item-qty">promené</td> 
+    </tr>
+				    <tr>  
+      <td class="item-stock">6</td>
+<td class="item-qty">se promener</td>
+<td class="item-qty">to go for a walk/drive</td>
+<td class="item-qty">promenant</td>
+<td class="item-qty">promené</td> 
+    </tr>
+	<tr>  
+      <td class="item-stock">6</td>
+<td class="item-qty">relever</td>
+<td class="item-qty">to pick out</td>
+<td class="item-qty">relevant</td>
+<td class="item-qty">relevé</td> 
+    </tr> 		
+	   <tr>  
+      <td class="item-stock">7</td>
+<td class="item-qty">repérer</td>
+<td class="item-qty">to mark the difference between</td>
+<td class="item-qty">repérant</td>
+<td class="item-qty">repéré</td> 
+    </tr>
+				    <tr>  
+      <td class="item-stock">7</td>
+<td class="item-qty">répéter</td>
+<td class="item-qty">to repeat</td>
+<td class="item-qty">répétant</td>
+<td class="item-qty">répété</td> 
+    </tr>		
+				    <tr>  
+      <td class="item-stock">8</td>
+<td class="item-qty">se rappeler</td>
+<td class="item-qty">to recall to memory</td>
+<td class="item-qty">rappelant</td>
+<td class="item-qty">rappelé</td> 
+    </tr>
+	<tr>  
+      <td class="item-stock">11</td>
+<td class="item-qty">relier</td>
+<td class="item-qty">to join together</td>
+<td class="item-qty">reliant</td>
+<td class="item-qty">relié</td> 
+    </tr>
+				    <tr>  
+      <td class="item-stock">11</td>
+<td class="item-qty">remercier</td>
+<td class="item-qty">to thank</td>
+<td class="item-qty">remerciant</td>
+<td class="item-qty">remercié</td> 
+    </tr>
+				    <tr>  
+      <td class="item-stock">16</td>
+<td class="item-qty">réagir</td>
+<td class="item-qty">to react</td>
+<td class="item-qty">réagissant</td>
+<td class="item-qty">réagi</td> 
+    </tr>
+				    <tr>  
+      <td class="item-stock">16</td>
+<td class="item-qty">rebâtir</td>
+<td class="item-qty">to rebuild</td>
+<td class="item-qty">rebâtissant</td>
+<td class="item-qty">rebâti</td> 
+    </tr>
+	<tr>  
+      <td class="item-stock">16</td>
+<td class="item-qty">réfléchir</td>
+<td class="item-qty">to think, to reflect</td>
+<td class="item-qty">réfléchissant</td>
+<td class="item-qty">réfléchi</td> 
+    </tr>
+				    <tr>  
+      <td class="item-stock">16</td>
+<td class="item-qty">refroidir</td>
+<td class="item-qty">to cool down</td>
+<td class="item-qty">refroidissant</td>
+<td class="item-qty">refroidi</td> 
+    </tr>
+				    <tr>  
+      <td class="item-stock">16</td>
+<td class="item-qty">remplir</td>
+<td class="item-qty">to fill up</td>
+<td class="item-qty">remplissant</td>
+<td class="item-qty">rempli</td> 
+    </tr>
+				    <tr>  
+      <td class="item-stock">16</td>
+<td class="item-qty">réunir</td>
+<td class="item-qty">to combine</td>
+<td class="item-qty">réunissant</td>
+<td class="item-qty">réuni</td> 
+    </tr>
+				    <tr>  
+      <td class="item-stock">16</td>
+<td class="item-qty">réussir</td>
+<td class="item-qty">to succeed</td>
+<td class="item-qty">réussissant</td>
+<td class="item-qty">réussi</td> 
+    </tr>
+					    <tr>  
+      <td class="item-stock">17</td>
+<td class="item-qty">revenir</td>
+<td class="item-qty">to come again</td>
+<td class="item-qty">revenant</td>
+<td class="item-qty">revenu</td> 
+    </tr>
+						    <tr>  
+      <td class="item-stock">23</td>
+<td class="item-qty">recevoir</td>
+<td class="item-qty">to receive</td>
+<td class="item-qty">recevant</td>
+<td class="item-qty">reçu</td> 
+    </tr>
+						    <tr>  
+      <td class="item-stock">24</td>
+<td class="item-qty">revoir</td>
+<td class="item-qty">to see again</td>
+<td class="item-qty">revoyant</td>
+<td class="item-qty">revu</td> 
+    </tr>
+						    <tr>  
+      <td class="item-stock">30</td>
+<td class="item-qty">répondre</td>
+<td class="item-qty">to reply</td>
+<td class="item-qty">répondant</td>
+<td class="item-qty">répondu</td> 
+    </tr>
+	<tr>  
+      <td class="item-stock">31</td>
+<td class="item-qty">reprendre</td>
+<td class="item-qty">resume</td>
+<td class="item-qty">to	reprenant</td>
+<td class="item-qty">repris</td> 
+    </tr>
+						    <tr>  
+      <td class="item-stock">33</td>
+<td class="item-qty">promettre</td>
+<td class="item-qty">to promise</td>
+<td class="item-qty">promettant</td>
+<td class="item-qty">promis</td> 
+    </tr>
+						    <tr>  
+      <td class="item-stock">35</td>
+<td class="item-qty">refaire</td>
+<td class="item-qty">to do again</td>
+<td class="item-qty">refaisant</td>
+<td class="item-qty">refait</td> 
+    </tr>
+						    <tr>  
+      <td class="item-stock">38</td>
+<td class="item-qty">reconnaître</td>
+<td class="item-qty">to recognize</td>
+<td class="item-qty">reconnaissant</td> 
+<td class="item-qty">reconnu</td>
+    </tr>
+							    <tr>  
+      <td class="item-stock">44</td>
+<td class="item-qty">produire</td>
+<td class="item-qty">to produce</td>
+<td class="item-qty">produisant</td>
+<td class="item-qty">produit</td> 
+    </tr>
+	<tr>  
+      <td class="item-stock">45</td>
+<td class="item-qty">protéger</td>
+<td class="item-qty">to protect</td>
+<td class="item-qty">protégeant</td>
+<td class="item-qty">protégé</td> 
+    </tr>
+	</tbody>
+
+	</table>
+   </br>
+   
+<button style='font-size:24px'>Back   <a class='fas fa-arrow-alt-circle-right' href="index.html">0</a><a class='fas fa-arrow-alt-circle-right' href="index_1.html">1</a><a class='fas fa-arrow-alt-circle-right' href="index_2.html">2</a><a class='fas fa-arrow-alt-circle-right' href="index_3.html">3</a></button>
+</section>
+    
+
+
+
+  </body>
+</html>
